@@ -70,6 +70,9 @@ class getController extends ApiController
         ]);
     }
     
+    /**
+    * @bodyParam book_name varchar required -
+    */
     public function getBookAdByBookName(request $request){
         $books = booksAd::where('book_name', 'LIKE', '%'.$request['book_name'].'%')->get();
         
