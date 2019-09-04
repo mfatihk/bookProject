@@ -11,6 +11,9 @@ use App\booksAddress;
 
 class BooksUserController extends ApiController
 {
+    public function newHello(request $request){
+        return 'Fatih';
+    }
     /**
     * @bodyParam remember_token text required -
     * @bodyParam per_page integer  -
